@@ -6,7 +6,7 @@
 //
 
 
-package main;
+package data;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
