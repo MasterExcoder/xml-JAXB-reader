@@ -13,13 +13,15 @@ import data.Cd;
 public class XmlReader {
 
 	public static void main(String[] args) {
-		List cds = new List();
 		try {
+			//Creates new JAXBContext instance, the argument is the package containing the generated java files
 			JAXBContext context = JAXBContext.newInstance("data");
+			//Creates new unmarshaller from the context
 			Unmarshaller unmarshaller = context.createUnmarshaller();
-			
+			//Unmarshalls the generated java file and creates an usable instance of it
 			Catalog catalog = (Catalog) unmarshaller.unmarshal(new File("D:\\git\\xml-JAXB-reader\\xml-JAXB-reader\\cdcatalog.xml"));
 			
+			//Printing out the content of the XML file
 			System.out.println("___CDs___");
 			for (int i = 0; i < catalog.getCD().size(); i++) {
 				Cd cd = (Cd) catalog.getCD().get(i);
