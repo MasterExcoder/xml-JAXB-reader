@@ -6,7 +6,7 @@
 //
 
 
-package data;
+package xjcData;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -54,7 +54,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
     "year"
 })
 @XmlRootElement(name = "CD")
-public class CD {
+public class Cd {
 
     @XmlElement(name = "TITLE", required = true)
     protected String title;

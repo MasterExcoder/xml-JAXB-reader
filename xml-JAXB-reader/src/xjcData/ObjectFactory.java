@@ -6,7 +6,7 @@
 //
 
 
-package data;
+package xjcData;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -50,19 +50,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CATALOG }
+     * Create an instance of {@link Catalog }
      * 
      */
-    public CATALOG createCATALOG() {
-        return new CATALOG();
+    public Catalog createCATALOG() {
+        return new Catalog();
     }
 
     /**
-     * Create an instance of {@link CD }
+     * Create an instance of {@link Cd }
      * 
      */
-    public CD createCD() {
-        return new CD();
+    public Cd createCD() {
+        return new Cd();
     }
 
     /**

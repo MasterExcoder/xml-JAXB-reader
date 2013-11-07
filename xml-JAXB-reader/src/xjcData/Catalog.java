@@ -6,7 +6,7 @@
 //
 
 
-package data;
+package xjcData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,10 +41,10 @@ import javax.xml.bind.annotation.XmlType;
     "cd"
 })
 @XmlRootElement(name = "CATALOG")
-public class CATALOG {
+public class Catalog {
 
     @XmlElement(name = "CD", required = true)
-    protected List<CD> cd;
+    protected List<Cd> cd;
 
     /**
      * Gets the value of the cd property.
@@ -64,13 +64,13 @@ public class CATALOG {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link CD }
+     * {@link Cd }
      * 
      * 
      */
-    public List<CD> getCD() {
+    public List<Cd> getCD() {
         if (cd == null) {
-            cd = new ArrayList<CD>();
+            cd = new ArrayList<Cd>();
         }
         return this.cd;
     }
